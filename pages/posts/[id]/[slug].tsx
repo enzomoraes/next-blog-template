@@ -8,14 +8,14 @@ import PostService from '../../../core/services/PostService';
 
 export default function PostPage(props: PostProps) {
   const { post } = props;
-  const pageTitle = `${post?.title} - Alganews`;
+  const pageTitle = `${post?.title} - Nome do Site`;
   return (
     <>
       <Head>
         {/* Open graph - pre visualizacao do site */}
         <meta property='og:title' content={post?.title} />
-        <meta property='og:site_name' content='AlgaNews' />
-        <meta property='og:url' content='alganews.com.br' />
+        <meta property='og:site_name' content='siteName' />
+        <meta property='og:url' content='dnshere' />
         <meta property='og:description' content={post?.body.slice(0, 54)} />
         <meta property='og:type' content='article' />
         <meta property='og:image' content={post?.imageUrls.medium} />
